@@ -1,0 +1,7 @@
+POST http://localhost:5002/v1/authorize/phone
+Content-Type: application/json
+client_id: 02c5ed6a-5d54-4efb-868e-97a1c2458f42
+
+{
+    "phoneNumber": "+46709198104"
+}

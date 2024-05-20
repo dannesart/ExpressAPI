@@ -1,0 +1,6 @@
+POST https://api.monerium.dev
+Content-Type: application/json
+
+{
+    "client_id": "1f48da86-b49c-48ce-9cda-b5576131572a"
+}

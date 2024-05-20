@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <img src="logo.webp" class="logo" />
+
+      <!-- <h1 class="title">Welcome</h1> -->
+
+      <div class="missing hide" id="settingsError"></div>
+
+      <p class="paragraph">Log in to to PEYYA to get the experience.</p>
+
+      <form class="form" id="phoneForm">
+        <label>
+          Phone number
+          <input
+            type="tel"
+            name="phonenumber"
+            placeholder="+xx xx xxxxxx"
+            id="phoneNumber"
+          />
+        </label>
+        <div class="error hide" id="phoneError"></div>
+        <button id="verify-button">Verify</button>
+      </form>
+
+      <form class="form hide" id="codeForm">
+        <label>
+          Code
+          <div class="code">
+            <input
+              type="tel"
+              name="code1"
+              placeholder="x"
+              id="code1"
+              maxlength="1"
+            />
+            <input
+              type="tel"
+              name="code2"
+              placeholder="x"
+              id="code2"
+              maxlength="1"
+            />
+            <input
+              type="tel"
+              name="code3"
+              placeholder="x"
+              id="code3"
+              maxlength="1"
+            />
+            <input
+              type="tel"
+              name="code4"
+              placeholder="x"
+              id="code4"
+              maxlength="1"
+            />
+            <input
+              type="tel"
+              name="code5"
+              placeholder="x"
+              id="code5"
+              maxlength="1"
+            />
+            <input
+              type="tel"
+              name="code6"
+              placeholder="x"
+              id="code6"
+              maxlength="1"
+            />
+          </div>
+        </label>
+        <button id="confirm-button">Confirm</button>
+      </form>
+
+      <p class="paragraph bottom">
+        Read more <a href="https://peyya.co">@peyya</a>
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

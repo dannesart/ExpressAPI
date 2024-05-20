@@ -1,0 +1,1 @@
+export { TinkPaymentBankService } from "./service";

@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - npm install -g typescript
+      - npm install
+  build:
+    commands:
+      - npm run build
+
+  post_build:
+    commands:
+      - cp ./package.json ./dist
+      - cp ./package-lock.json ./dist
+
+artifacts:
+  files:
+    - "**/*"
+  base-directory: "dist"

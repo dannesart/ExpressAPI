@@ -1,0 +1,1 @@
+export { OpenPaymentBankService } from "./service";
